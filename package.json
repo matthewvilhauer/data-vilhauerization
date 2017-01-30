@@ -1,0 +1,30 @@
+{
+  "name": "data-vilhauerization",
+  "version": "1.0.0",
+  "description": "My journey to becoming a data visualiztion master.",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/matthewvilhauer/data-vilhauerization.git"
+  },
+  "keywords": [
+    "data",
+    "visualization",
+    "d3",
+    "node"
+  ],
+  "author": "Matthew Vilhauer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewvilhauer/data-vilhauerization/issues"
+  },
+  "homepage": "https://github.com/matthewvilhauer/data-vilhauerization#readme",
+  "dependencies": {
+    "d3": "^4.5.0",
+    "express": "^4.14.1",
+    "nodemon": "^1.11.0"
+  }
+}
