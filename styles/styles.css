@@ -9,17 +9,22 @@
 .sidebar-container {
     position: fixed;
     float: left;
-    width: 100%;
     padding-top: 150px;
+    width: auto;
+    display: block;
 }
 .sidebar-words {
     width: 320px;
+    padding-top: 10px;
 }
 .social-media-icon {
     color: #37474F;
 }
 .social-media-icons {
     padding-top: 20px;
+}
+.smi-spacing {
+    padding-left: 10px;
 }
 .main-content {
     padding-top: 20px;
