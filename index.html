@@ -10,6 +10,7 @@
     <!--@todo: add type= to all of these tags. -->
     <link  rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
     <!--VENDOR SCRIPTS-->
     <script
@@ -22,24 +23,30 @@
     <!--APPLICATION SCRIPTS-->
     <script src="scripts/app.js"></script>
 </head>
-<body>
+<body onload="createSoccerViz()">
     <div class="page-container">
         <div class="col-sm-4">
             <div class="sidebar-container">
                 <h1>Data Vilhauerization</h1>
                 <p class="sidebar-words">I want to learn how to become a data visualization expert. The purpose of this page
                     is to have a place where I can practice building interactive graphics and write a little bit about the process.</p>
-                <p class="sidebar-words">But hopefully the visualizations will do a lot of the talking for themselves :-)</p>
-                <h3>About the Author</h3>
-                <h3>Contact</h3>
+                <p class="sidebar-words">But hopefully as I get better the visualizations will begin to speak for themselves :-)</p>
             </div>
         </div>
         <div class="col-sm-8">
             <div class="main-content">
-
+                <div class="visualzation">
+                    <h2>World Cup Analysis</h2>
+                    <div id="soccer-viz">
+                        <svg class="mainsoccerviz"/>
+                    </div>
+                    <div id="soccer-viz-controls"></div>
+                    <p class="soccer-viz-description">My first visualization gives a visual comparison of a number of different statistics for soccer teams in the 2010 world cup. Click on the buttons to see a visual comparison of each stat. Running the mouse over a give nteam's circle populates the modal with that team's data.</p>
+                </div>
             </div>
         </div>
     </div>
-    <footer class="footer"><div class="author">Designed by Matthew Vilhauer, inspired by Mike Bostock and d3</div></footer>
+    <footer class="footer"><div class="author">Designed by Matt Vilhauer, inspired by Mike Bostock and d3</div></footer>
 </body>
+    <script src="scripts/soccerviz.js" type="text/javascript"></script>
 </html>
