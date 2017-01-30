@@ -1,19 +1,28 @@
 /* Styles */
 .page-container {
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #4d4d4d;
-  max-width: 1200px;
-  margin: 0 auto;
-	position: relative;
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4d4d4d;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 .sidebar-container {
-	position: fixed;
-	float: left;
+    position: fixed;
+    float: left;
     width: 100%;
     padding-top: 150px;
 }
 .sidebar-words {
     width: 320px;
+}
+.social-media-icon {
+    color: #37474F;
+}
+.social-media-icons {
+    padding-top: 20px;
+}
+.main-content {
+    padding-top: 20px;
 }
 .footer {
     position: fixed;
@@ -23,4 +32,51 @@
     background-color: #f5f5f5;
     text-align: center;
     padding-top: 10px;
+}
+
+/*Soccer Visualization*/
+
+.mainsoccerviz {
+    width:700px;
+    height:500px;
+    border:1px lightgray solid;
+    margin: 0px auto;
+}
+
+circle {
+    fill: pink;
+    stroke: black;
+    stroke-width: 1px;
+}
+
+circle.active {
+    fill: red;
+}
+
+circle.inactive {
+    fill: gray;
+}
+
+#soccer-viz-modal {
+    position:fixed;
+    left:50%;
+    top:120px;
+    z-index:1;
+    background: white;
+    border: 1px black solid;
+    box-shadow: 10px 10px 5px #888888;
+    min-width: 80px;
+}
+td {
+    font-size: 10px;
+    min-width: 80px;
+}
+tr {
+    margin: 5px;
+}
+td.data {
+    font-weight: 900;
+}
+.soccer-viz-description {
+    padding-top: 20px;
 }
