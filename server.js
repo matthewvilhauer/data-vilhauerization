@@ -17,6 +17,9 @@ app.use('/data', express.static('data'));
 app.get('/', function homepage (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
+app.get('/test', function homepage (req, res) {
+  res.sendFile(__dirname + '/test.html');
+});
 
 /**********
  * SERVER *
